@@ -4,6 +4,27 @@
 
 In this project, an application was created where the user could make a poster with a randomly selected poster, quote, and title. That poster could then be saved if the user liked it as such. The user could also make their own poster with their own image, quote, and title. The user could then save the poster and see it in their saved posters page. If the user did not like that saved poster, they then could delete it. 
 
+## Project Goals:
+
+- Build the querySelectors, eventListeners, and eventHandlers.
+- Properly perform GitFlow
+
+#### Wins:
+
+- Developed an application with no bugs
+
+#### Challenges:
+
+-
+
+#### Technologies Used:
+
+- HTML
+- CSS
+- JavaScript
+- Git/GitHub
+
+## In Action:
 
 ### Iteration 0 - Main Page
 
