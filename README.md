@@ -32,11 +32,13 @@ In this project, an application was created where the user could make a poster w
 
 ## In Action:
 
-### Iteration 0 - Main Page
+### Iteration 0:
 
-![screenshot of main page showing poster](/readme-imgs/homepage.png)
+The giph will show;
 
-- When the page loads, we should see a poster with a randomly selected image, title, and quote
+When the page loads, we should see a poster with a randomly selected image, title, and quote;
+
+<img src = "https://recordit.co/emqBT9Xnqh.gif" alt="Random posters" height=auto width=75%/>
 
 ### Iteration 1 - Switching Views
 
