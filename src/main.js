@@ -129,7 +129,7 @@ function randomizePoster() {
   var newTitle = titles[getRandomIndex(titles)];
   var newQuote = quotes[getRandomIndex(quotes)];
   var newImage = images[getRandomIndex(images)]
-  updateTitle.innerText = newTtitle;
+  updateTitle.innerText = newTitle;
   updateQuote.innerText = newQuote;
   updateImg.src = newImage;
   currentPoster = new Poster(newImage, newTitle, newQuote);
