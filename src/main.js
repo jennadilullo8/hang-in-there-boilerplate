@@ -6,8 +6,15 @@ var savePoster = document.querySelector(".save-poster");
 var showSaved = document.querySelector(".show-saved");
 var showRandom = document.querySelector(".show-random");
 var showForm = document.querySelector(".show-form");
-
-
+var posterForm = document.querySelector(".poster-form");
+var inputImage = document.querySelector("#poster-image-url");
+var inputTitle = document.querySelector("#poster-title");
+var inputQuote = document.querySelector("#poster-quote");
+var makePoster = document.querySelector(".make-poster");
+var showMain = document.querySelector(".show-main");
+var savedPostersPage = document.querySelector(".saved-posters");
+var savedPostersGrid = document.querySelector(".saved-posters-grid");
+var backToMain = document.querySelector(".back-to-main");
 
 var images = [
   "./assets/bees.jpg",
@@ -113,7 +120,6 @@ var currentPoster;
 
 window.addEventListener('load', randomizePoster);
 showRandom.addEventListener('click', randomizePoster);
-
 
 function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
