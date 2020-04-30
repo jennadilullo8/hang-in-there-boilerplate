@@ -1,21 +1,27 @@
-# Hang In There Project - Application for a poster developer
+# Hang In There Project - Application for a poster developer - Redo
 
 ## About Project:
 
-In this project, an application was created where the user could make a poster with a randomly selected poster, quote, and title. That poster could then be saved if the user liked it as such. The user could also make their own poster with their own image, quote, and title. The user could then save the poster and see it in their saved posters page. If the user did not like that saved poster, they then could delete it. 
+This project is being redone for knowledge purposes. The main GitHub to where this was done is located here;
+
+Leigh Larson and Jenna DiLullo's original project: https://github.com/leighlars/hang-in-there-boilerplate
+
+In this project, an application was created where the user could make a poster with a randomly selected poster, quote, and title. That poster could then be saved if the user liked it as such. The user could also make their own poster with their own image, quote, and title. The user could then save the poster and see it in their saved posters page. If the user did not like that saved poster, they then could delete it.
 
 ## Project Goals:
 
 - Build the querySelectors, eventListeners, and eventHandlers.
 - Properly perform GitFlow
+- Randomize poster as application is loaded
 
 #### Wins:
 
 - Developed an application with no bugs
+- Checking console for errors
 
 #### Challenges:
 
--
+- Understanding to check the console
 
 #### Technologies Used:
 
@@ -26,11 +32,13 @@ In this project, an application was created where the user could make a poster w
 
 ## In Action:
 
-### Iteration 0 - Main Page
+### Iteration 0:
 
-![screenshot of main page showing poster](/readme-imgs/homepage.png)
+The giph will show;
 
-- When the page loads, we should see a poster with a randomly selected image, title, and quote
+When the page loads, we should see a poster with a randomly selected image, title, and quote;
+
+<img src = "https://recordit.co/emqBT9Xnqh.gif" alt="Random posters" height=auto width=75%/>
 
 ### Iteration 1 - Switching Views
 
