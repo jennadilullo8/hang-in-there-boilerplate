@@ -1,6 +1,21 @@
-// query selector variables go here 👇
+var mainPoster = document.querySelector(".main-poster");
+var updateImg = document.querySelector(".poster-img");
+var updateTitle = document.querySelector(".poster-title");
+var updateQuote = document.querySelector(".poster-quote");
+var savePoster = document.querySelector(".save-poster");
+var showSaved = document.querySelector(".show-saved");
+var showRandom = document.querySelector(".show-random");
+var showForm = document.querySelector(".show-form");
+var posterForm = document.querySelector(".poster-form");
+var inputImage = document.querySelector("#poster-image-url");
+var inputTitle = document.querySelector("#poster-title");
+var inputQuote = document.querySelector("#poster-quote");
+var makePoster = document.querySelector(".make-poster");
+var showMain = document.querySelector(".show-main");
+var savedPostersPage = document.querySelector(".saved-posters");
+var savedPostersGrid = document.querySelector(".saved-posters-grid");
+var backToMain = document.querySelector(".back-to-main");
 
-// we've provided you with some data to work with 👇
 var images = [
   "./assets/bees.jpg",
   "./assets/bridge.jpg",
@@ -98,20 +113,24 @@ var quotes = [
   "Each person must live their life as a model for others.",
   "A champion is defined not by their wins but by how they can recover when they fall."
 ];
-var savedPosters = [
-  makePoster(
-    "https://i.giphy.com/media/5LU6ZcEGBbhVS/giphy.gif",
-    "Optimism",
-    "Keep a joyful heart!"
-  )
-];
+
+var savedPosters = [];
+
 var currentPoster;
 
-// event listeners go here 👇
+window.addEventListener('load', randomizePoster);
+showRandom.addEventListener('click', randomizePoster);
 
-// functions and event handlers go here 👇
-// (we've provided one for you to get you started)!
 function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
 }
 
+function randomizePoster() {
+  var newTitle = titles[getRandomIndex(titles)];
+  var newQuote = quotes[getRandomIndex(quotes)];
+  var newImage = images[getRandomIndex(images)]
+  updateTitle.innerText = newTitle;
+  updateQuote.innerText = newQuote;
+  updateImg.src = newImage;
+  currentPoster = new Poster(newImage, newTitle, newQuote);
+}
