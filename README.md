@@ -10,18 +10,21 @@ In this project, an application was created where the user could make a poster w
 
 ## Project Goals:
 
-- Build the querySelectors, eventListeners, and eventHandlers.
+- Build the querySelectors, eventListeners, and eventHandlers
 - Properly perform GitFlow
 - Randomize poster as application is loaded
+- Click the buttons to be able to switch to different forms
 
 #### Wins:
 
 - Developed an application with no bugs
 - Checking console for errors
+- Properly using classList to add and remove a hidden class
 
 #### Challenges:
 
 - Understanding to check the console
+- Understanding how the DOM and data model communicate with eachother
 
 #### Technologies Used:
 
@@ -36,24 +39,19 @@ In this project, an application was created where the user could make a poster w
 
 The giph will show;
 
-When the page loads, we should see a poster with a randomly selected image, title, and quote;
+- When the page loads, we should see a poster with a randomly selected image, title, and quote;
 
 <img src = "https://recordit.co/emqBT9Xnqh.gif" alt="Random posters" height=auto width=75%/>
 
-### Iteration 1 - Switching Views
+### Iteration 1:
 
-Form page:
-![screenshot of form](/readme-imgs/form.png)
-
-Saved posters page (once working with extra saved posters):
-![screenshot of saved posters page](/readme-imgs/saved.png)
+The giph will show;
 
 - When a user clicks the "Make Your Own Poster" button, we should see the form, and the main poster should be hidden
-- When a user clicks the "View Saved Posters" button, we should see the saved posters area, and the main poster should be hidden
+- When a user clicks the "Show Saved Posters" button, we should see the saved posters area, and the main poster should be hidden
 - When a user clicks the "Nevermind, take me back!" or "Back to Main" buttons, we should only see the main poster section
-- In summary: Be able to switch between the three views (main poster, form, and saved posters) on the correct button clicks
 
-_Hint: go check out the HTML and CSS files to see how the form and saved posters sections are being hidden in the first place_
+<img src = "https://recordit.co/xFNYYPbMny.gif" alt="Switch Views" height=auto width=75%/>
 
 ## Iteration 2 - Creating a New Poster
 
