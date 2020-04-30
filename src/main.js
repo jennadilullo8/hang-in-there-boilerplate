@@ -122,6 +122,8 @@ window.addEventListener('load', randomizePoster);
 showRandom.addEventListener('click', randomizePoster);
 showForm.addEventListener('click', showPosterForm);
 showSaved.addEventListener('click', savedPosterForm);
+showMain.addEventListener('click', showMainPoster);
+backToMain.addEventListener('click', showMainPoster);
 
 function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
@@ -145,4 +147,10 @@ function showPosterForm() {
 function savedPosterForm() {
   mainPoster.classList.add("hidden");
   savedPostersPage.classList.remove("hidden");
+}
+
+function showMainPoster() {
+  savedPostersPage.classList.add("hidden");
+  posterForm.classList.add("hidden");
+  mainPoster.classList.remove("hidden");
 }
