@@ -163,6 +163,6 @@ function showMyPoster(event) {
   updateTitle.innerText = newTitle.value;
   updateQuote.innerText = newQuote.value;
   updateImg.src = newImage.value;
-  currentPoster = newPoster(inputImage.value, inputTitle.value, inputQuote.value);
+  currentPoster = new Poster(inputImage.value, inputTitle.value, inputQuote.value);
 
 }
