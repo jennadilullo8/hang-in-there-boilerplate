@@ -121,6 +121,7 @@ var currentPoster;
 window.addEventListener('load', randomizePoster);
 showRandom.addEventListener('click', randomizePoster);
 showForm.addEventListener('click', showPosterForm);
+showSaved.addEventListener('click', savedPosterForm);
 
 function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
@@ -139,4 +140,9 @@ function randomizePoster() {
 function showPosterForm() {
   posterForm.classList.remove("hidden");
   mainPoster.classList.add("hidden");
+}
+
+function savedPosterForm() {
+  mainPoster.classList.add("hidden");
+  savedPostersPage.classList.remove("hidden");
 }
