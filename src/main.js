@@ -125,6 +125,7 @@ showSaved.addEventListener('click', savedPosterForm);
 showMain.addEventListener('click', showMainPoster);
 backToMain.addEventListener('click', showMainPoster);
 makePoster.addEventListener('click', showMyPoster);
+savePoster.addEventListener('click', storeSavePoster);
 
 function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
@@ -160,9 +161,15 @@ function showMyPoster(event) {
   event.preventDefault();
   posterForm.classList.add("hidden");
   mainPoster.classList.remove("hidden");
-  updateTitle.innerText = newTitle.value;
-  updateQuote.innerText = newQuote.value;
-  updateImg.src = newImage.value;
+  updateTitle.innerText = inputTitle.value;
+  updateQuote.innerText = inputQuote.value;
+  updateImg.src = inputImage.value;
   currentPoster = new Poster(inputImage.value, inputTitle.value, inputQuote.value);
 
+}
+
+function storeSavePoster() {
+  images.push(inputImage.value);
+  titles.push(inputTitle.value);
+  quotes.push(inputQuote.value);
 }
