@@ -16,6 +16,7 @@ In this project, an application was created where the user could make a poster w
 - Click the buttons to be able to switch to different forms
 - Create a new poster and display that poster in the main form
 - Save the newly created poster in the saved posters form
+- Delete a saved poster once double clicked
 
 #### Wins:
 
@@ -23,7 +24,8 @@ In this project, an application was created where the user could make a poster w
 - Checking console for errors
 - Properly using classList to add and remove a hidden class
 - Displaying newly made poster
-- Adding HTML into an event Handler to properly display saved posters in the saved poster form
+- Adding HTML into an Event Handler to properly display saved posters in the saved poster form
+- Using an array prototype to delete the first element of an array
 
 #### Challenges:
 
@@ -31,6 +33,7 @@ In this project, an application was created where the user could make a poster w
 - Understanding how the DOM and data model communicate with each other
 - Using the correct syntax to display newly made poster
 - Using correct variables
+- Check spelling errors
 
 #### Technologies Used:
 
@@ -77,8 +80,10 @@ The giph will show;
 
 <img src = "https://recordit.co/iGFyQd2dYX.gif" alt="Display Saved Poster" height=auto width=75%/>
 
-## Iteration 4 - Deleting Saved Posters
+## Iteration 4:
+
+The giph will show;
 
 - From the saved posters view, if a user double clicks a saved poster, it will be deleted
 
-_Hint: How will you update the data model to achieve this?_
+<img src = "https://recordit.co/iGFyQd2dYX.gif" alt="Display Saved Poster" height=auto width=75%/>
