@@ -174,3 +174,16 @@ function storeSavePoster() {
   quotes.push(inputQuote.value);
   savedPosters.push(currentPoster);
 }
+
+function showSavedPosterGrid() {
+  if(savedPosters.length != 0) {
+    for (var i = 0; i < savedPosters.length; i++) {
+      posterGrid.insertAdjacentHTML("afterbegin", `
+      <div class="mini-poster" data-id=${savedPosters[i].id}>
+      <img src=${savedPosters[i].imageURL}>
+      <h2>${savedPosters[i].title}</h2>
+      <h4>${savedPosters[i].quote}</h4>
+      </div>`);
+    }
+  }
+}
