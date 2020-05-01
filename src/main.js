@@ -147,8 +147,10 @@ function showPosterForm() {
 }
 
 function savedPosterForm() {
+  savedPostersGrid.innerHTML = "";
   mainPoster.classList.add("hidden");
   savedPostersPage.classList.remove("hidden");
+  showSavedPosterGrid();
 }
 
 function showMainPoster() {
@@ -172,4 +174,29 @@ function storeSavePoster() {
   images.push(inputImage.value);
   titles.push(inputTitle.value);
   quotes.push(inputQuote.value);
+  if(deleteDuplicateSavedPosters()) {
+    savedPosters.push(currentPoster);
+  }
+}
+
+function deleteDuplicateSavedPosters() {
+  for (var i = 0; i < savedPosters.length; i++) {
+    if(savedPosters[i].id == currentPoster.id) {
+      return false;
+    }
+  }
+  return true;
+}
+
+function showSavedPosterGrid() {
+  if(savedPosters.length != 0) {
+    for (var i = 0; i < savedPosters.length; i++) {
+      savedPostersGrid.insertAdjacentHTML("afterbegin", `
+      <div class="mini-poster" data-id=${savedPosters[i].id}>
+      <img src=${savedPosters[i].imageURL}>
+      <h2>${savedPosters[i].title}</h2>
+      <h4>${savedPosters[i].quote}</h4>
+      </div>`);
+    }
+  }
 }
