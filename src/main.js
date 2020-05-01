@@ -177,6 +177,15 @@ function storeSavePoster() {
   savedPosters.push(currentPoster);
 }
 
+function deleteDuplicateSavedPosters() {
+  for (var i = 0; i < savedPosters.length; i++) {
+    if(savedPosters[i].id == currentPoster.id) {
+      return false;
+    }
+  }
+  return true;
+}
+
 function showSavedPosterGrid() {
   if(savedPosters.length != 0) {
     for (var i = 0; i < savedPosters.length; i++) {
