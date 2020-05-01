@@ -86,4 +86,4 @@ The giph will show;
 
 - From the saved posters view, if a user double clicks a saved poster, it will be deleted
 
-<img src = "https://recordit.co/iGFyQd2dYX.gif" alt="Display Saved Poster" height=auto width=75%/>
+<img src = "http://g.recordit.co/fRFmh5nz8W.gif" alt="Display Saved Poster" height=auto width=75%/>
