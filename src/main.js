@@ -2,7 +2,6 @@ var mainPoster = document.querySelector(".main-poster");
 var updateImg = document.querySelector(".poster-img");
 var updateTitle = document.querySelector(".poster-title");
 var updateQuote = document.querySelector(".poster-quote");
-var savePoster = document.querySelector(".save-poster");
 var showSaved = document.querySelector(".show-saved");
 var showRandom = document.querySelector(".show-random");
 var showForm = document.querySelector(".show-form");
@@ -125,7 +124,6 @@ showSaved.addEventListener('click', savedPosterForm);
 showMain.addEventListener('click', showMainPoster);
 backToMain.addEventListener('click', showMainPoster);
 makePoster.addEventListener('click', showMyPoster);
-savePoster.addEventListener('click', storeSavePoster);
 savedPostersGrid.addEventListener('dblclick', removeSavedPoster);
 
 function getRandomIndex(array) {
@@ -172,6 +170,8 @@ function showMyPoster(event) {
 }
 
 function storeSavePoster() {
+  var savePoster = document.querySelector(".save-poster");
+  savePoster.addEventListener('click', storeSavePoster);
   images.push(inputImage.value);
   titles.push(inputTitle.value);
   quotes.push(inputQuote.value);
