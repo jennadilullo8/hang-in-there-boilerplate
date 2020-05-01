@@ -2,7 +2,7 @@
 
 ## About Project:
 
-This project is being redone for knowledge purposes. The main GitHub to where this was done is located here;
+This project is being redone to better Jenna's knowledge. The main GitHub to where this was done is located here;
 
 Leigh Larson and Jenna DiLullo's original project: https://github.com/leighlars/hang-in-there-boilerplate
 
@@ -15,6 +15,7 @@ In this project, an application was created where the user could make a poster w
 - Randomize poster as application is loaded
 - Click the buttons to be able to switch to different forms
 - Create a new poster and display that poster in the main form
+- Save the newly created poster in the saved posters form
 
 #### Wins:
 
@@ -22,12 +23,14 @@ In this project, an application was created where the user could make a poster w
 - Checking console for errors
 - Properly using classList to add and remove a hidden class
 - Displaying newly made poster
+- Adding HTML into an event Handler to properly display saved posters in the saved poster form
 
 #### Challenges:
 
 - Understanding to check the console
 - Understanding how the DOM and data model communicate with each other
 - Using the correct syntax to display newly made poster
+- Using correct variables
 
 #### Technologies Used:
 
@@ -65,15 +68,14 @@ The giph will show;
 
 <img src = "http://g.recordit.co/cuadFkcTEt.gif" alt="Display Saved Poster" height=auto width=75%/>
 
-## Iteration 3 - Saving & Viewing Posters
+## Iteration 3:
 
-Saved posters view:
-![screenshot of saved posters section](/readme-imgs/saved.png)
+The giph will show;
 
-- When a user clicks the "Save This Poster" button, the current main poster will be added to the `savedPosters` array.
+- When the user makes a new poster and clicks the "Save Poster" button and then clicks on the "Show Saved", the saved poster will be displayed
 - If a user clicks the "Save This Poster" more than once on a single poster, it will still only be saved once (no duplicates)
-- When a user clicks the "Show Saved Posters" button, we should see the saved posters section
-- All the posters in the `savedPosters` array should be displayed in the saved posters grid section
+
+<img src = "https://recordit.co/iGFyQd2dYX.gif" alt="Display Saved Poster" height=auto width=75%/>
 
 ## Iteration 4 - Deleting Saved Posters
 
