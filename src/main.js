@@ -172,4 +172,5 @@ function storeSavePoster() {
   images.push(inputImage.value);
   titles.push(inputTitle.value);
   quotes.push(inputQuote.value);
+  savedPosters.push(currentPoster);
 }
