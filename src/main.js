@@ -126,7 +126,7 @@ showMain.addEventListener('click', showMainPoster);
 backToMain.addEventListener('click', showMainPoster);
 makePoster.addEventListener('click', showMyPoster);
 savePoster.addEventListener('click', storeSavePoster);
-savedPostersGrid.addEventListener('dbclick', removeSavedPoster);
+savedPostersGrid.addEventListener('dblclick', removeSavedPoster);
 
 function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
@@ -175,14 +175,14 @@ function storeSavePoster() {
   images.push(inputImage.value);
   titles.push(inputTitle.value);
   quotes.push(inputQuote.value);
-  if(deleteDuplicateSavedPosters()) {
+  if (deleteDuplicateSavedPosters()) {
     savedPosters.push(currentPoster);
   }
 }
 
 function deleteDuplicateSavedPosters() {
   for (var i = 0; i < savedPosters.length; i++) {
-    if(savedPosters[i].id == currentPoster.id) {
+    if (savedPosters[i].id == currentPoster.id) {
       return false;
     }
   }
@@ -190,7 +190,7 @@ function deleteDuplicateSavedPosters() {
 }
 
 function showSavedPosterGrid() {
-  if(savedPosters.length != 0) {
+  if (savedPosters.length != 0) {
     for (var i = 0; i < savedPosters.length; i++) {
       savedPostersGrid.insertAdjacentHTML("afterbegin", `
       <div class="mini-poster" data-id=${savedPosters[i].id}>
@@ -202,4 +202,13 @@ function showSavedPosterGrid() {
   }
 }
 
-function
+function removeSavedPoster(event) {
+    var deletePosterHTML = event.target.closest(".mini-poster");
+    for (var i = 0; i < savedPosters.length; i++) {
+      if (savedPosters[i].id == deletePosterHTML.dataset.id) {
+        savedPosters.splice(i, 1);
+        savedPostersGrid.innerHTML = "";
+        showSavedPosterGrid();
+    }
+  }
+}
