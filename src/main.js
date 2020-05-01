@@ -126,6 +126,7 @@ showMain.addEventListener('click', showMainPoster);
 backToMain.addEventListener('click', showMainPoster);
 makePoster.addEventListener('click', showMyPoster);
 savePoster.addEventListener('click', storeSavePoster);
+savedPostersGrid.addEventListener('dbclick', removeSavedPoster);
 
 function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
@@ -200,3 +201,5 @@ function showSavedPosterGrid() {
     }
   }
 }
+
+function
